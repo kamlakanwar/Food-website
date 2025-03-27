@@ -1,0 +1,25 @@
+@media only screen and (min-width:200px) and (max-width:575px){
+    .carouselSection img{
+        height: 40vh;
+    }
+
+    .container-review img{
+        height: 9rem;
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:991px){
+    .container-box img{
+        height: 25rem;
+        width: 100%;
+    }
+    .container-box img:hover{
+        transform: none;
+    }
+    .container-review img{
+        height: 10rem;
+        font-size: 20px;
+        width: 35%;
+    }
+}

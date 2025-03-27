@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traditional food</title>
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <!-- signin-form -->
+    <div class="modal fade" id="sign-in" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">user-signin</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+                  <div class="mb-3">
+                    <label class="form-label">name</label>
+                    <input type="text" class="form-control" required="">
+                  </div>
+                  <div class="input-group mb-3">
+                    <label class="form-label">phone number</label>
+                    <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">+91</span>
+                    <input type="text" class="form-control" placeholder="phone number">
+                  </div>
+                </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="userId">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="userId">
+                    <label class="form-check-label">remember me</label>
+                  </div>
+                  <button type="submit" class="btn btn-success">continue</button>
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="container-fluid navbar-light bg-white shadow-lg" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg p-0">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a href="#" class="navbar-brand navbar-logo" >
+                <img src="./images/logo.svg" alt="logo-svg"/>
+              </a>
+              <div class="collapse navbar-collapse justify-content-end mx-lg-4" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#special">Our Special</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#popular">Popular Items</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#review">Review</a>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="orderBtn p-2 rounded-3" data-bs-toggle="modal" data-bs-target="#sign-in">
+                <h3 class="m-0 p-1">Order Now</h3>
+              </button>
+            </nav>
+            <div class="offcanvas offcanvas-start" id="mobileMenu">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenu">
+                  <img src="./images/logo.svg" alt="logo-svg" width="60px">
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#special">Our Special</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#popular">Popular Items</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#review">Review</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+      <div id="slider1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carouselSection">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./images/header-img1.jpg" class="d-block w-100 img-fluid" alt="img">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>must on the indian restaurant's menu</h5>
+              <p>Savor the Essence of India, One Bite at a Time.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/header-img2.jpg" class="d-block w-100 img-fluid" alt="img">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>What's the secret to pulling off a fabulous Dinner Party?</h5>
+              <p>From Masalas to Meals: Discover the True Taste of India</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/header-img3.jpg" class="d-block w-100 img-fluid" alt="img">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Indian Cuisine: A Symphony of Flavors, Delivered.</h5>
+              <p>A Journey Through India's Kitchens, One Recipe at a Time.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+        <!-- --our's special -- -->
+      <section>
+        <div class="container-fluid my-5" id="special">
+          <div class="container container-box">
+              <h1 class="m-4 text-center">our's <span class="text-success">special</span></h1>
+              <div class="row" id="demo">
+                <div class="col-lg-3 col-12 border border-secondary rounded" id="shallow">
+                  <img src="./images/item1.jpg" alt="item-1" class="img-fluid p-3">
+                  <div class="text-center">
+                    <h3>saag paneer</h3>
+                    <p>saag paneer is a healthy,protein & flavor-packed dish of indian chesse,
+                      served in a buttery,spicy & creamy curry made with plenty of leafy greens.
+                      it is best served for a weekend lunch with roti, tandoori roti, butter naan or 
+                      plain fluffy basmati rice.
+                    </p>
+                  </div>
+                  </div>
+                <div class="col-lg-3 col-12 border border-secondary rounded" id="shallow">
+                  <img src="./images/item2.jpg" alt="item-1"  class="img-fluid p-3">
+                  <div class="text-center">
+                    <h3>paneer curry (Dhaba Style)</h3>
+                    <p>treat yourself to this delicious paneer curry made in Dhaba style. this comforting 
+                      north indian dish is a treat to all the dhaba food lovers! it's flavorsome, simple to make
+                    & comes together under 30 mins.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-12 border border-secondary rounded" id="shallow">
+                  <img src="./images/item3.jpg" alt="item-1" class="img-fluid p-3">
+                  <div class="text-center">
+                    <h3>veg biryani</h3>
+                    <p>Biryani Rice is a popular Indian rice dish made with basmati rice & biryani essentials
+                       like spices, herbs, yogurt and onions. It is nothing but a one pot vegetarian plain biryani
+                        flavored rice made without any meat or veggies.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                <div class="row" id="demo">
+                  <div class="col-lg-3 col-12 border border-secondary rounded" id="shallow">
+                    <img src="./images/item4.jpg" alt="item-1" class="img-fluid p-3">
+                    <div class="text-center">
+                      <h3>Matar Mushroom</h3>
+                      <p>Matar Mushroom is a one pot curried side dish made with mushrooms, green peas, onions, tomatoes,
+                         spices and herbs. This flavorsome and delicious curry gets done under 30 minutes and makes for a great weeknight dinner option. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12 border border-secondary rounded" id="shallow">
+                    <img src="./images/item5.jpg" alt="item-1"  class="img-fluid p-3">
+                    <div class="text-center">
+                      <h3>Aloo Gobi</h3>
+                      <p>Make the best Aloo Gobi that’s simply delicious, flavor packed & healthy!
+                         There is nothing more comforting for an Indian soul than a bowl of fresh cooked sabzi (veggies)
+                          served with some hot fluffy Basmati Rice, puffed rotis or Chapati and Dal Tadka.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12 border border-secondary rounded" id="shallow">
+                    <img src="./images/item6.jpg" alt="item-1" class="img-fluid p-3" >
+                    <div class="text-center">
+                      <h3>malai kofta</h3>
+                      <p>This Malai Kofta is the ultimate North Indian showstopper! Crispy Indian cheese dumplings known as
+                         paneer kofta are served with a rich, luxurious & super delicious malai (creamy) gravy. This Malai Kofta
+                          curry is a celebratory dish that brings gourmet Indian flavors to your dinner table.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --our popular foods -- -->
+      <section>
+        <div class="container-fluid" id="popular">
+          <div class="container container-box2 py-4">
+              <h1 class="m-4 text-center">our <span class="text-success">popular </span>foods</h1>
+              <div class="row gy-4">
+                <div class="col-lg-4 col-12">
+                  <div class="card">
+                    <img src="./images/popular-item1.jpg" class="card-img-top p-3" alt="popular-item" id="shallow">
+                    <div class="card-body">
+                      <h5 class="card-title">dal Tadka</h5>
+                      <span class="p-2 m-4"> ₹120 - ₹250 </span>
+                      <a href="#order" class="order-btn btn btn-outline-success">order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <div class="card">
+                    <img src="./images/popular-item2.jpg" class="card-img-top p-3" alt="popular-item">
+                    <div class="card-body">
+                      <h5 class="card-title">mix veg</h5>    
+                      <span class="p-2 m-4"> ₹160 - ₹350 </span>                  
+                      <a href="#order" class="order-btn btn btn-outline-success">order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <div class="card">
+                    <img src="./images/popular-item3.jpg" class="card-img-top p-3" alt="popular-item">
+                    <div class="card-body">
+                      <h5 class="card-title">veg fried rice</h5>
+                      <span class="p-2 m-4"> ₹140 - ₹200 </span>
+                      <a href="#order" class="order-btn btn btn-outline-success">order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                <div class="row">
+                  <div class="col-lg-4 col-12">
+                    <div class="card">
+                      <img src="./images/popular-item4.jpg" class="card-img-top p-3" alt="popular-item">
+                      <div class="card-body">
+                        <h5 class="card-title">aloo dum</h5>                     
+                        <span class="p-2 m-4"> ₹100 - ₹350 </span>  
+                        <a href="#order" class="order-btn btn btn-outline-success">order now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card">
+                      <img src="./images/popular-item5.jpg" class="card-img-top p-3" alt="popular-item">
+                      <div class="card-body">
+                        <h5 class="card-title">Schezwan Fried Rice</h5> 
+                        <span class="p-2 m-4"> ₹160 - ₹150 </span>       
+                        <a href="#order" class="order-btn btn btn-outline-success">order now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card">
+                      <img src="./images/popular-item6.jpg" class="card-img-top p-3" alt="popular-item">
+                      <div class="card-body">
+                        <h5 class="card-title">kadai paneer</h5>
+                        <span class="p-2 m-4"> ₹250 - ₹450 </span>
+                        <a href="#order" class="order-btn btn btn-outline-success">order now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -- food gallery ---->
+      <section>
+        <div class="container-fluid my-4" id="gallery">
+          <div class="container container-gallery py-4">
+              <h1 class="m-4 text-center">our Food<span class="text-success"> Gallery</span></h1>
+              <div class="row gy-4">
+                <div class="col-lg-4 col-12">
+                  <div class="card">
+                    <img src="./images/gallery-item1.jpg" class="card-img-top p-3" alt="gallery-item">
+                    <div class="card-body gallery-content">
+                      <h5 class="card-title">yummy dishes</h5>
+                      <p class="card-text">Food, a universal language of love, A symphony of flavors sent from above.
+                         It tells stories of culture, tradition, and care, Every bite a journey, a treasure to share. 
+                         <br/>
+                         ----
+                         <br/>
+                         What’s your favorite dish?
+                        </p>
+                      <a href="#order" class="order-btn btn btn-outline-success">order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <div class="card">
+                    <img src="./images/gallery-item2.jpg" class="card-img-top p-3" alt="gallery-item">
+                    <div class="card-body gallery-content">
+                      <h5 class="card-title">rasam soup</h5>               
+                      <p class="card-text">A symphony of flavors, bold yet kind, An ancient recipe, to body and mind.
+                         Each sip a story, a heritage deep, Rasam, a treasure we lovingly keep. Would you like to order? 
+                         <br/>
+                         don't think much just go it! It could even list out heartfelt wishes as its “ingredients”!</p>      
+                      <a href="#" class="order-btn btn btn-outline-success">order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <div class="card">
+                    <img src="./images/gallery-item3.jpg" class="card-img-top p-3" alt="gallery-item">
+                    <div class="card-body gallery-content">
+                      <h5 class="card-title">kadhi rice</h5>
+                      <p class="card-text">Aromatic curries (spiced wet gravies) with vegetables, pulses 
+                        and meat substitutes can be exciting, new and an exotic experience for vegetarian who tried Indian food for the first time.
+                        The gravies in the curries are the ones that provide an amazing flavor.</p>
+                      <a href="#" class="order-btn btn btn-outline-success">order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                <div class="row">
+                  <div class="col-lg-4 col-12">
+                    <div class="card">
+                      <img src="./images/gallery-item4.jpg" class="card-img-top p-3" alt="gallery-item">
+                      <div class="card-body gallery-content">
+                        <h5 class="card-title">curd & salad</h5> 
+                        <p class="card-text">With a sprinkle of greens and a dash of art, Let’s toss in a message straight from the heart.
+                           A salad of flavors, a card that speaks, Together they bring joy that peaks.
+                           It could even list out heartfelt wishes as its “ingredients”!</p>
+                        <a href="#" class="order-btn btn btn-outline-success">order now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card">
+                      <img src="./images/gallery-item5.jpg" class="card-img-top p-3" alt="gallery-item">
+                      <div class="card-body gallery-content">
+                        <h5 class="card-title">drink</h5>      
+                        <p class="card-text">Drinks like lassi, chaas, or jaljeera aren’t just beverages—they’re a 
+                          cultural experience, offering both nourishment and a touch of nostalgia. <br/>
+                          Do you have a favorite, or should we toast to all of them? 🍹
+                        </p>
+                        <a href="#" class="order-btn btn btn-outline-success">order now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card">
+                      <img src="./images/gallery-item6.jpg" class="card-img-top p-3" alt="gallery-item">
+                      <div class="card-body gallery-content">
+                        <h5 class="card-title">tasty Biryani</h5>
+                        <p class="card-text">"Food, the canvas where flavors play, A feast for senses in every way. 
+                          A slice of culture, Bringing people together everywhere.
+                          A dish that embodies tradition and comfort 
+                          Food truly connects hearts and bridges worlds. just go for it.</p>
+                        <a href="#" class="order-btn btn btn-outline-success">order now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- review section -->
+      <section>
+        <div class="container-fluid" id="review">
+          <div class="container container-review">
+              <h1 class="my-4 text-center">our<span class="text-success"> customer's</span> review</h1>
+              <div class="row gy-3 pt-5 mt-5">
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="card border border-5">
+                    <img src="./images/person1.jpg" class="card-img-top rounded-circle border border-5" alt="gallery-item">
+                    <div class="card-body">
+                      <h5 class="card-title">kunal arora</h5>
+                      <p class="card-text"> literally satisfied with the customer service. highly recommended!
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="card border border-5">
+                    <img src="./images/person2.jpg" class="card-img-top rounded-circle border border-5" alt="gallery-item">
+                    <div class="card-body">
+                      <h5 class="card-title">sristi sharma</h5>               
+                      <p class="card-text">honesty happy with your food and items. loved it </p>      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="card border border-5">
+                    <img src="./images/person3.jpg" class="card-img-top rounded-circle border border-5" alt="gallery-item">
+                    <div class="card-body">
+                      <h5 class="card-title">rahul thakur</h5>
+                      <p class="card-text">best indian food served by TraditionalFood.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="card border border-5">
+                    <img src="./images/person4.jpg" class="card-img-top rounded-circle border border-5" alt="gallery-item">
+                    <div class="card-body">
+                      <h5 class="card-title">kely wishy</h5>
+                      <p class="card-text">tasty food with multiple healthy items. you should definitely try.</p>
+                    </div>
+                  </div>
+                </div>
+              <div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-fluid pb-5 my-4 bg-secondary-stuble">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-12">
+                <h2 class="text-center fw-bold p-3">few customer's queries</h2>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button text-body" type="button" data-bs-toggle="collapse" data-bs-target="#fq1">
+                        What defines traditional food?
+                      </button>
+                    </h2>
+                    <div id="fq1" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        Traditional food is deeply rooted in cultural heritage and often reflects the history, climate, and agriculture of a region.
+                         It includes recipes passed down through generations, often made with locally sourced ingredients.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-body" type="button" data-bs-toggle="collapse" data-bs-target="#fq2">
+                        What ingredients are used in your dishes?
+                      </button>
+                    </h2>
+                    <div id="fq2" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        We use fresh, authentic ingredients sourced locally to recreate the traditional flavors of each dish. 
+                        A detailed ingredients list is provided for every item on our menu.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-body" type="button" data-bs-toggle="collapse" data-bs-target="#fq3">
+                        Do you use onion and garlic in your dishes?
+                      </button>
+                    </h2>
+                    <div id="fq3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        We offer both options! If you'd prefer food without onion and garlic, simply select the 
+                        "No Onion, No Garlic" preference while placing your order.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+      <!-- order section -->
+       <section>
+        <div class="container-fluid m-3" id="order">
+          <div class="container py-3 shadow-lg rounded-3">
+            <h1 class="my-4 text-center">order<span class="text-success"> now</span></h1>
+            <div class="row justify-content-center p-4">
+              <div class="col-lg-7 col-12">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">name</label>
+                    <input type="text" class="form-control" required="">
+                  </div>
+                  <div class="input-group mb-3">
+                    <label class="form-label">phone number</label>
+                    <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">+91</span>
+                    <input type="text" class="form-control" placeholder="phone number">
+                  </div>
+                </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="userId">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">food name</label>
+                    <input type="text" class="form-control" id="userId">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">address</label>
+                    <input type="address" class="form-control" id="userId">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="userId">
+                    <label class="form-check-label">remember me</label>
+                  </div>
+                  <a href="#" class="order-btn btn btn-outline-success">order now</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- -- footer -- -->
+        <footer>
+          <div class="container-fluid">
+            <div class="container py-5 ">
+              <div class="row">
+                <div class="col-lg-4 col-6">
+                  <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: +91 0000000000</li>
+                    <li><a href="https://www.linkedin.com/in/kamla-kanwar">Connect us</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#special">our's special</a></li>
+                    <li><a href="#popular">popular foods</a></li>
+                    <li><a href="#review">customer reviews</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-4 col-12 ">
+                  <h3>Follow Us</h3>
+                    <ul class="d-flex gap-3">
+                    <li><a href="https://www.instagram.com/kamlakanwar.06/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kamla-kanwar/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://wa.me/+910000000000" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://github.com/kamlakanwar/" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                  </div>
+            </div>
+            <p class="text-center mt-3">all rights reserved.. kamla kanwar ❤ </p>
+          </div>
+        </div>
+        </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

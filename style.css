@@ -1,0 +1,181 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding:0;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+}
+
+::selection{
+    background: #0a780b;
+    color: #fff;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img{
+    width: 60px;
+}
+
+#navbarNav ul li a{
+    color: #666666;
+    font-weight: 700; 
+}
+
+#navbarNav ul li a:hover{
+    color:#0a780b;
+}
+
+.orderBtn{
+    background:#0a780b;
+    border: none;
+}
+
+.orderBtn h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.carouselSection img{
+    height: 90vh;
+}
+
+.carouselSection h5{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.carouselSection p{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* -- -- our's food section -- -- */
+
+.container-box #demo{
+    justify-content: center;
+    gap: 25px;
+}
+
+.container-box #shallow:hover{
+    box-shadow: 10px 10px 10px 0px rgb(179, 179, 179);
+}
+
+.container-box img{
+    height: 15rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.container-box img:hover{
+    transform: rotateY(150deg);
+}
+
+/* -- -- popular food section -- -- */
+
+.container-box2 img{
+    position: relative;
+    height: 20rem;
+    width: 100%;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card span{
+    position: absolute;
+    background:#0a780b;
+    border-radius: 5px;
+    margin-top: 10px;
+    left: 3px;;
+    width: 35%;
+    top: 2px;
+}
+
+.container-gallery img{
+    position: relative;
+    height: 20rem;
+    width: 100%;
+}
+
+.gallery-content{
+    position: absolute;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 15px;
+    opacity: 0;
+}
+
+.gallery-content h5{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.gallery-content p{
+    font-size: 15px;
+    margin: 22px 0px;
+}
+
+.gallery-content:hover{
+    background: #fff;
+    transition: all .2s linear;
+    opacity: 0.8;
+}
+
+.container-review{
+    position: relative; 
+}
+
+.container-review .card{
+    background: rgb(160, 244, 160);
+    align-items: center;
+    height: 15rem;
+    margin-bottom: 40px;
+}
+
+.container-review img{
+    position: absolute;
+    top: -70px;
+    height: 9rem;
+    width: 50%;
+}
+
+.container-review h5{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .5rem 0;
+    margin-top: 60px;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    font-weight: 500;
+    color: #555252;
+}
+
+footer ul li a:hover{
+    color: #1d6c11;
+}
+
+footer ul {
+    padding: 0px;
+    line-height: 30px;
+}
